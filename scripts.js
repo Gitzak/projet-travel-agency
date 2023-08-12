@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 link.href = item.link;
                 link.textContent = item.text;
 
-                if (link.href === window.location.href) {
+                if (window.location.href.includes(item.link)) {
                     link.classList.add('active');
                 }
 
@@ -33,4 +33,5 @@ document.addEventListener("DOMContentLoaded", function () {
         .catch(error => {
             console.error('Error fetching menu data:', error);
         });
+
 });
