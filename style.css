@@ -6,6 +6,18 @@
     --primary-color-hover: #d27b23;
 }
 
+.spinner-wrapper{
+    display: flex;
+    background-color: #ffeedd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.2s;
+}
+
 h1, h2, h3, h4, h5, h6, p, span, input, select {
     font-family: var(--font-family);
 }
@@ -179,6 +191,14 @@ header {
     margin-bottom: 100px;
 }
 
+.mt-40 {
+    margin-top: 100px;
+}
+
+.mb-40 {
+    margin-bottom: 100px;
+}
+
 .py-40 {
     padding-top: 100px;
     padding-bottom: 100px;
@@ -208,6 +228,44 @@ header {
 }
 
 .hero .container {
+    z-index: 2;
+}
+
+/* heading */
+.heading {
+    position: relative;
+    min-height: 100%;
+    height: 500px;
+    padding-top: 10em;
+    padding-bottom: 10em;
+}
+
+.heading-about {
+    background: url('assets/images/bg-about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading-destinations {
+    background: url('assets/images/destination-heading.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.heading::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 1;
+}
+
+.heading .container {
     z-index: 2;
 }
 
@@ -536,6 +594,7 @@ footer {
 @media screen and (min-width: 577px) {
     .cards-wrapper {
         display: flex;
+        justify-content: center;
     }
 
     .elemetCard {
@@ -549,9 +608,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .elemetCard:not(:first-child) {
+    /* .elemetCard:not(:first-child) {
         display: none;
-    }
+    } */
 }
 
 .image-wrapper img {

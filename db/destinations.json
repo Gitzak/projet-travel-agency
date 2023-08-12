@@ -1,0 +1,44 @@
+[
+    {
+        "id": 1,
+        "title": "1 Day Tour - Chefchaouen",
+        "location": "Chefchaouen",
+        "price": 1299.00,
+        "description": "Explore Chefchaouen's blue charm, markets, and stunning vistas.",
+        "primaryImage": "/assets/images/chefchaoun.jpg",
+        "secondaryImages": [
+            "/assets/images/chefchaoun_1.jpg",
+            "/assets/images/chefchaoun_2.jpg",
+            "/assets/images/chefchaoun_3.jpg",
+            "/assets/images/chefchaoun_4.jpg"
+        ]
+    },
+    {
+        "id": 2,
+        "title": "2 Days Tour - Agafay Valley",
+        "location": "Agafay Valley",
+        "price": 3599.00,
+        "description": "Embark on a 2-day Agafay Valley tour, immerse in desert beauty, embrace Berber culture, find tranquil serenity.",
+        "primaryImage": "/assets/images/agafay.jpg",
+        "secondaryImages": [
+            "/assets/images/agafay_1.jpg",
+            "/assets/images/agafay_2.jpg",
+            "/assets/images/agafay_3.jpg",
+            "/assets/images/agafay_4.jpg"
+        ]
+    },
+    {
+        "id": 3,
+        "title": "2 Days Tour - Marrakech",
+        "location": "Marrakech",
+        "price": 4999.00,
+        "description": "Experience the magic of Marrakech on a captivating 2-day tour. Delight in vibrant markets, historic landmarks, and cultural richness.",
+        "primaryImage": "/assets/images/kech.jpg",
+        "secondaryImages": [
+            "/assets/images/kech_1.jpg",
+            "/assets/images/kech_2.jpg",
+            "/assets/images/kech_3.jpg",
+            "/assets/images/kech_4.jpg"
+        ]
+    }
+]
