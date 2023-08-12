@@ -247,6 +247,13 @@ header {
     background-position: center;
 }
 
+.heading-destinations {
+    background: url('assets/images/destination-heading.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .heading::before {
     content: "";
     position: absolute;
