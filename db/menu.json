@@ -1,0 +1,23 @@
+[
+    {
+      "text": "Home",
+      "link": "index.html"
+    },
+    {
+      "text": "About Us",
+      "link": "about.html"
+    },
+    {
+      "text": "Destination",
+      "link": "destinations.html"
+    },
+    {
+      "text": "Blog",
+      "link": "blogs.html"
+    },
+    {
+      "text": "Contact",
+      "link": "contact.html"
+    }
+  ]
+  

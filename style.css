@@ -6,6 +6,18 @@
     --primary-color-hover: #d27b23;
 }
 
+.spinner-wrapper{
+    display: flex;
+    background-color: #ffeedd;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 9999;
+    transition: all 0.2s;
+}
+
 h1, h2, h3, h4, h5, h6, p, span, input, select {
     font-family: var(--font-family);
 }
@@ -575,6 +587,7 @@ footer {
 @media screen and (min-width: 577px) {
     .cards-wrapper {
         display: flex;
+        justify-content: center;
     }
 
     .elemetCard {
@@ -588,9 +601,9 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
-    .elemetCard:not(:first-child) {
+    /* .elemetCard:not(:first-child) {
         display: none;
-    }
+    } */
 }
 
 .image-wrapper img {
