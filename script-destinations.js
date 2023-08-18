@@ -1,19 +1,18 @@
 
 // Script Fetch Destinations
-const tourContainer = document.getElementById("tourContainer");
-
-fetch("db/destinations.json")
-    .then((response) => response.json())
-    .then((destinationsData) => {
-        destinationsData.forEach((tour) => {
-            const tourCard = document.createElement("div");
-            tourCard.className =
-                "col-md-4 col-sm-12 d-flex align-items-stretch";
-            tourCard.innerHTML = `
+document.addEventListener("DOMContentLoaded", () => {
+    fetch("db/destinations.json")
+        .then((response) => response.json())
+        .then((destinationsData) => {
+            destinationsData.forEach((tour) => {
+                const tourCard = document.createElement("div");
+                tourCard.className =
+                    "col-md-4 col-sm-12 d-flex align-items-stretch";
+                tourCard.innerHTML = `
                         <div class="card elemetCard">
                             <div class="image-wrapper">
                                 <img class="rounded" src="${tour.primaryImage
-                }" alt="...">
+                    }" alt="...">
                             </div>
                             <div class="card-body d-flex flex-column">
                                 <div class="d-flex mb-3">
@@ -22,8 +21,8 @@ fetch("db/destinations.json")
                                 </div>
                                 <h5 class="card-title">${tour.title}</h5>
                                 <h2 class="text-primary">${tour.price.toFixed(
-                    2
-                )} MAD</h2>
+                        2
+                    )} MAD</h2>
                                 <p class="card-text">${tour.description}</p>
                                 <div
                                 class="d-flex align-items-center justify-content-between mt-auto"
@@ -42,46 +41,47 @@ fetch("db/destinations.json")
                         </div>
                     `;
 
-            const discoverButton = tourCard.querySelector(".btn");
-            discoverButton.addEventListener("click", () => {
-                localStorage.setItem("destinationSelectedId", tour.id);
-                window.location.href = "details-destination.html";
-            });
+                const discoverButton = tourCard.querySelector(".btn");
+                discoverButton.addEventListener("click", () => {
+                    localStorage.setItem("destinationSelectedId", tour.id);
+                    window.location.href = "details-destination.html";
+                });
 
-            const likeButton = tourCard.querySelector(".btn-like");
-            const icon = likeButton.querySelector("i.fa-heart");
-            const savedIds = JSON.parse(localStorage.getItem("likedTourIds")) || [];
-
-            if (savedIds.includes(tour.id)) {
-                icon.classList.remove("fa-regular");
-                icon.classList.add("fa-solid");
-            } else {
-                icon.classList.remove("fa-solid");
-                icon.classList.add("fa-regular");
-            }
-
-            likeButton.addEventListener("click", () => {
-                console.log(tour.id);
+                const likeButton = tourCard.querySelector(".btn-like");
+                const icon = likeButton.querySelector("i.fa-heart");
+                const savedIds = JSON.parse(localStorage.getItem("likedTourIds")) || [];
 
                 if (savedIds.includes(tour.id)) {
-                    const updatedIds = savedIds.filter((id) => id !== tour.id);
-                    localStorage.setItem(
-                        "likedTourIds",
-                        JSON.stringify(updatedIds)
-                    );
-                    icon.classList.remove("fa-solid");
-                    icon.classList.add("fa-regular");
-                } else {
-                    savedIds.push(tour.id);
-                    localStorage.setItem("likedTourIds", JSON.stringify(savedIds));
                     icon.classList.remove("fa-regular");
                     icon.classList.add("fa-solid");
+                } else {
+                    icon.classList.remove("fa-solid");
+                    icon.classList.add("fa-regular");
                 }
-            });
 
-            tourContainer.appendChild(tourCard);
+                likeButton.addEventListener("click", () => {
+                    console.log(tour.id);
+
+                    if (savedIds.includes(tour.id)) {
+                        const updatedIds = savedIds.filter((id) => id !== tour.id);
+                        localStorage.setItem(
+                            "likedTourIds",
+                            JSON.stringify(updatedIds)
+                        );
+                        icon.classList.remove("fa-solid");
+                        icon.classList.add("fa-regular");
+                    } else {
+                        savedIds.push(tour.id);
+                        localStorage.setItem("likedTourIds", JSON.stringify(savedIds));
+                        icon.classList.remove("fa-regular");
+                        icon.classList.add("fa-solid");
+                    }
+                });
+
+                tourContainer.appendChild(tourCard);
+            });
+        })
+        .catch((error) => {
+            console.error("Error fetching menu data:", error);
         });
-    })
-    .catch((error) => {
-        console.error("Error fetching menu data:", error);
-    });
+});
