@@ -6,7 +6,7 @@
     --primary-color-hover: #d27b23;
 }
 
-.spinner-wrapper{
+.spinner-wrapper {
     display: flex;
     background-color: #ffeedd;
     position: fixed;
@@ -94,7 +94,7 @@ button.btn {
     border-radius: 8px;
 }
 
-.bg-gray-light{
+.bg-gray-light {
     background-color: #f8f8f8;
 }
 
@@ -538,7 +538,11 @@ header {
     background-color: rgba(234, 148, 50, 0.20);
 }
 
-.bg-primary{
+.bg-secondary-020 {
+    background-color: rgba(196, 196, 196, 0.2);
+}
+
+.bg-primary {
     background-color: var(--primary-color) !important;
 }
 
@@ -623,4 +627,8 @@ footer {
 .image-wrapper img {
     max-width: 100%;
     max-height: 100%;
+}
+
+#map {
+    height: 500px
 }

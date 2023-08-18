@@ -1,4 +1,3 @@
-
 // Script Fetch Destinations
 document.addEventListener("DOMContentLoaded", () => {
     fetch("db/destinations.json")
