@@ -5,12 +5,12 @@
         "location": "Chefchaouen",
         "price": 1299.00,
         "description": "Explore Chefchaouen's blue charm, markets, and stunning vistas.",
-        "primaryImage": "/assets/images/chefchaoun.jpg",
+        "primaryImage": "/assets/images/destinations/chefchaouen.jpg",
         "secondaryImages": [
-            "/assets/images/chefchaoun_1.jpg",
-            "/assets/images/chefchaoun_2.jpg",
-            "/assets/images/chefchaoun_3.jpg",
-            "/assets/images/chefchaoun_4.jpg"
+            "/assets/images/destinations/chefchaouen_1.jpg",
+            "/assets/images/destinations/chefchaouen_2.jpg",
+            "/assets/images/destinations/chefchaouen_3.jpg",
+            "/assets/images/destinations/chefchaouen_4.jpg"
         ]
     },
     {
@@ -19,12 +19,12 @@
         "location": "Agafay Valley",
         "price": 3599.00,
         "description": "Embark on a 2-day Agafay Valley tour, immerse in desert beauty, embrace Berber culture, find tranquil serenity.",
-        "primaryImage": "/assets/images/agafay.jpg",
+        "primaryImage": "/assets/images/destinations/agafay.jpg",
         "secondaryImages": [
-            "/assets/images/agafay_1.jpg",
-            "/assets/images/agafay_2.jpg",
-            "/assets/images/agafay_3.jpg",
-            "/assets/images/agafay_4.jpg"
+            "/assets/images/destinations/agafay_1.jpg",
+            "/assets/images/destinations/agafay_2.jpg",
+            "/assets/images/destinations/agafay_3.jpg",
+            "/assets/images/destinations/agafay_4.jpg"
         ]
     },
     {
@@ -33,12 +33,54 @@
         "location": "Marrakech",
         "price": 4999.00,
         "description": "Experience the magic of Marrakech on a captivating 2-day tour. Delight in vibrant markets, historic landmarks, and cultural richness.",
-        "primaryImage": "/assets/images/kech.jpg",
+        "primaryImage": "/assets/images/destinations/kech.jpg",
         "secondaryImages": [
-            "/assets/images/kech_1.jpg",
-            "/assets/images/kech_2.jpg",
-            "/assets/images/kech_3.jpg",
-            "/assets/images/kech_4.jpg"
+            "/assets/images/destinations/kech_1.jpg",
+            "/assets/images/destinations/kech_2.jpg",
+            "/assets/images/destinations/kech_3.jpg",
+            "/assets/images/destinations/kech_4.jpg"
+        ]
+    },
+    {
+        "id": 4,
+        "title": "4 Days Tour - Rabat",
+        "location": "Rabat",
+        "price": 4500.00,
+        "description": "Discover Rabat's captivating blend of history, culture, and modern charm on a mesmerizing 4-day journey at the crossroads of tradition and innovation.",
+        "primaryImage": "/assets/images/destinations/rabat.jpg",
+        "secondaryImages": [
+            "/assets/images/destinations/rabat_1.jpg",
+            "/assets/images/destinations/rabat_2.jpg",
+            "/assets/images/destinations/rabat_3.jpg",
+            "/assets/images/destinations/rabat_4.jpg"
+        ]
+    },
+    {
+        "id": 5,
+        "title": "3 Days Tour - agadir",
+        "location": "Agadir",
+        "price": 4999.00,
+        "description": "Embark on a captivating 3-day voyage to Agadir, where sun-kissed beaches, vibrant markets, and coastal charm converge to create an unforgettable escape.",
+        "primaryImage": "/assets/images/destinations/agadir.jpg",
+        "secondaryImages": [
+            "/assets/images/destinations/kech_1.jpg",
+            "/assets/images/destinations/kech_2.jpg",
+            "/assets/images/destinations/kech_3.jpg",
+            "/assets/images/destinations/kech_4.jpg"
+        ]
+    },
+    {
+        "id": 6,
+        "title": "2 Days Tour - Tangier",
+        "location": "Tangier",
+        "price": 2999.00,
+        "description": "Embark on a 2-day odyssey in Tangier, where history, culture, and coastal charm blend seamlessly for an enchanting escape.",
+        "primaryImage": "/assets/images/destinations/tangier.jpg",
+        "secondaryImages": [
+            "/assets/images/destinations/tangier_1.jpg",
+            "/assets/images/destinations/tangier_2.jpg",
+            "/assets/images/destinations/tangier_3.jpg",
+            "/assets/images/destinations/tangier_4.jpg"
         ]
     }
 ]
