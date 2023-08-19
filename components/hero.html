@@ -11,15 +11,20 @@
             <div class="col-12">
                 <div class="searchwrapper mt-3">
                     <div class="searchbox">
-                        <div class="row d-flex justify-content-center align-items-center">
-
-                            <div class="col-md-6 col-sm-12 p-1"><input type="text" class="form-control"
-                                    placeholder="Search by Keywords..."></div>
-                            <div class="col-md-6 col-sm-12 p-1"><input type="text" class="form-control"
-                                    placeholder="Location">
+                        <form id="searchForm" class="row d-flex justify-content-center align-items-center">
+                            <div class="col-md-6 col-sm-12 p-1"><input id="key-Word-search" type="text"
+                                    class="form-control" placeholder="Search by Keywords..."></div>
+                            <div class="col-md-6 col-sm-12 p-1">
+                                <select id="location" class="form-control location">
+                                    <option>Location</option>
+                                    <option>Marrakech</option>
+                                    <option>Chefchaouen</option>
+                                    <option>Tanger</option>
+                                    <option>Agafay Valley</option>
+                                </select>
                             </div>
                             <div class="col-md-6 col-sm-12 p-1">
-                                <select class="form-control category">
+                                <select id="category" class="form-control category">
                                     <option>Category</option>
                                     <option>Any</option>
                                     <option>Adventure</option>
@@ -28,7 +33,7 @@
                                 </select>
                             </div>
                             <div class="col-md-6 col-sm-12 p-1">
-                                <select class="form-control category">
+                                <select id="people" class="form-control people">
                                     <option>People</option>
                                     <option>1</option>
                                     <option>2</option>
@@ -36,9 +41,9 @@
                                     <option>4</option>
                                 </select>
                             </div>
-                            <div class="col-sm-12 pt-3 d-flex justify-content-end"><button type="button"
-                                    class="btn btn-primary border-radius-15">Explore Now</button></div>
-                        </div>
+                            <div class="col-sm-12 pt-3 d-flex justify-content-end"><button type="submit"
+                                    class="btn btn-primary border-radius-15 text-dark">Explore Now</button></div>
+                        </form>
                     </div>
                 </div>
             </div>

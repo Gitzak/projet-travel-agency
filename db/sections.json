@@ -1,0 +1,46 @@
+[
+    {
+        "sections": [
+            {
+                "targetId": "spinner",
+                "fileName": "components/spinner.html"
+            },
+            {
+                "targetId": "header",
+                "fileName": "components/header.html"
+            },
+            {
+                "targetId": "hero",
+                "fileName": "components/hero.html"
+            },
+            {
+                "targetId": "about",
+                "fileName": "components/about.html"
+            },
+            {
+                "targetId": "destinations",
+                "fileName": "components/destinations.html"
+            },
+            {
+                "targetId": "packages",
+                "fileName": "components/packages.html"
+            },
+            {
+                "targetId": "testimonial",
+                "fileName": "components/testimonial.html"
+            },
+            {
+                "targetId": "blog",
+                "fileName": "components/blog.html"
+            },
+            {
+                "targetId": "newslettre",
+                "fileName": "components/newslettre.html"
+            },
+            {
+                "targetId": "footer",
+                "fileName": "components/footer.html"
+            }
+        ]
+    }
+]

@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "title": "Blog Title 1",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores.",
+        "primaryImage": "/assets/images/blogs/blog1.jpg"
+    },
+    {
+        "id": 2,
+        "title": "Blog Title 2",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores.",
+        "primaryImage": "/assets/images/blogs/blog2.jpg"
+    },
+    {
+        "id": 3,
+        "title": "Blog Title 3",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi at, ipsa, obcaecati quisquam porro nihil ab impedit aut, quia autem reprehenderit rerum corrupti debitis hic numquam quaerat! Nobis, perferendis asperiores.",
+        "primaryImage": "/assets/images/blogs/blog3.jpg"
+    }
+]
