@@ -254,6 +254,13 @@ header {
     background-position: center;
 }
 
+.heading-blogs {
+    background: url('assets/images/bg-blogs.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
 .heading-contact {
     background: url('assets/images/bg-contact.png');
     background-repeat: no-repeat;

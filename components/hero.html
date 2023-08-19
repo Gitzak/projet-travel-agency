@@ -13,36 +13,40 @@
                     <div class="searchbox">
                         <form id="searchForm" class="row d-flex justify-content-center align-items-center">
                             <div class="col-md-6 col-sm-12 p-1"><input id="key-Word-search" type="text"
-                                    class="form-control" placeholder="Search by Keywords..."></div>
+                                    class="form-control" placeholder="Search by Keywords..." required></div>
                             <div class="col-md-6 col-sm-12 p-1">
-                                <select id="location" class="form-control location">
-                                    <option>Location</option>
-                                    <option>Marrakech</option>
-                                    <option>Chefchaouen</option>
-                                    <option>Tanger</option>
-                                    <option>Agafay Valley</option>
+                                <select id="location" class="form-control location" required>
+                                    <option value="">Location</option>
+                                    <option value="Marrakech">Marrakech</option>
+                                    <option value="Chefchaouen">Chefchaouen</option>
+                                    <option value="Tanger">Tanger</option>
+                                    <option value="Agafay Valley">Agafay Valley</option>
                                 </select>
                             </div>
                             <div class="col-md-6 col-sm-12 p-1">
-                                <select id="category" class="form-control category">
-                                    <option>Category</option>
-                                    <option>Any</option>
-                                    <option>Adventure</option>
-                                    <option>Luxury</option>
-                                    <option>Special offres</option>
+                                <select id="category" class="form-control category" required>
+                                    <option value="">Category</option>
+                                    <option value="agency">Agency</option>
+                                    <option value="adventure">Adventure</option>
+                                    <option value="luxury">Luxury</option>
+                                    <option value="special-oofre">Special offres</option>
                                 </select>
                             </div>
                             <div class="col-md-6 col-sm-12 p-1">
-                                <select id="people" class="form-control people">
+                                <select id="people" class="form-control people" required>
                                     <option>People</option>
-                                    <option>1</option>
-                                    <option>2</option>
-                                    <option>3</option>
-                                    <option>4</option>
+                                    <option class="1">1</option>
+                                    <option class="2">2</option>
+                                    <option class="3">3</option>
+                                    <option class="4">4</option>
+                                    <option class="5">5</option>
+                                    <option class="6">6</option>
+                                    <option class="7">7</option>
+                                    <option class="8">8</option>
                                 </select>
                             </div>
                             <div class="col-sm-12 pt-3 d-flex justify-content-end"><button type="submit"
-                                    class="btn btn-primary border-radius-15 text-dark">Explore Now</button></div>
+                                    class="btn btn-primary border-radius-15">Explore Now</button></div>
                         </form>
                     </div>
                 </div>
