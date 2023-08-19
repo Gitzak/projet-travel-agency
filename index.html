@@ -66,8 +66,7 @@
                     <div class="col-12 text-center mb-5">
                         <p class="text-primary fw-bold py-2">Hotels in close proximity to my location</p>
                         <h4 class="">Hotels in close proximity to my location in Morocco, including various amenities
-                            and
-                            accommodation options, await your stay.</h4>
+                            and accommodation options, await your stay.</h4>
                     </div>
                 </div>
                 <div class="row cards-wrapper mb-5">
@@ -100,89 +99,12 @@
     <div id="footer"></div>
     <!-- End Footer Section -->
 
-    <script src="pageLoader.js"></script>
-    <script>
-        // Load the sections using the pageLoader.js
-        loadSection('spinner', 'components/spinner.html');
-        loadSection('header', 'components/header.html');
-        loadSection('hero', 'components/hero.html');
-        loadSection('about', 'components/about.html');
-        loadSection('destinations', 'components/destinations.html');
-        // loadSection('mapNearly', 'components/mapNearly.html');
-        loadSection('packages', 'components/packages.html');
-        loadSection('testimonial', 'components/testimonial.html');
-        loadSection('blog', 'components/blog.html');
-        loadSection('newslettre', 'components/newslettre.html');
-        loadSection('footer', 'components/footer.html');
-        // loadSection('footer', 'footer.html');
-    </script>
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
 
-
     <script src="scripts.js"></script>
-    <script src="script-destinations.js"></script>
-
-    <script>
-
-        const map = L.map('map');
-        // Initializes map
-
-        var points = L.geoJSON(points).addTo(map);
-        pointIndex = leafletKnn(points)
-
-        map.setView([34.0198661,-6.8255744], 12);
-        // Sets initial coordinates and zoom level
-
-        L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
-            maxZoom: 18,
-            attribution: ''
-        }).addTo(map);
-        // Sets map data source and associates with map
-
-        let marker, circle, zoomed;
-
-        navigator.geolocation.watchPosition(success, error);
-
-        function success(pos) {
-
-            console.log(pos);
-
-            const lat = pos.coords.latitude;
-            const lng = pos.coords.longitude;
-            const accuracy = pos.coords.accuracy;
-
-            if (marker) {
-                map.removeLayer(marker);
-                map.removeLayer(circle);
-            }
-            // Removes any existing marker and circule (new ones about to be set)
-
-            marker = L.marker([lat, lng]).addTo(map);
-            circle = L.circle([lat, lng], { radius: accuracy }).addTo(map);
-            // Adds marker to the map and a circle for accuracy
-
-            if (!zoomed) {
-                zoomed = map.fitBounds(circle.getBounds());
-            }
-            // Set zoom to boundaries of accuracy circle
-
-            map.setView([lat, lng]);
-            // Set map focus to current user position
-
-        }
-
-        function error(err) {
-            if (err.code === 1) {
-                alert("Please allow geolocation access");
-            } else {
-                alert("Cannot get current location");
-            }
-        }
-    </script>
-
 </body>
 
 </html>

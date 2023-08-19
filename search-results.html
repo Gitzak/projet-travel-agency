@@ -25,7 +25,7 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css" />
-  <title>Morrocan Travel Agency</title>
+  <title>Morrocan Travel Agency - Search Result</title>
 </head>
 
 <body>
@@ -69,28 +69,28 @@
         <div class="btn-toolbar d-flex justify-content-center gap-2" role="toolbar"
           aria-label="Toolbar with button groups">
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">1</button>
+            <button type="button" class="btn btn-primary btn-sm">1</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">2</button>
+            <button type="button" class="btn btn-primary btn-sm">2</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">3</button>
+            <button type="button" class="btn btn-primary btn-sm">3</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">4</button>
+            <button type="button" class="btn btn-primary btn-sm">4</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">5</button>
+            <button type="button" class="btn btn-primary btn-sm">5</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">6</button>
+            <button type="button" class="btn btn-primary btn-sm">6</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">7</button>
+            <button type="button" class="btn btn-primary btn-sm">7</button>
           </div>
           <div class="btn-group me-2" role="group" aria-label="Third group">
-            <button type="button" class="btn btn-primary">8</button>
+            <button type="button" class="btn btn-primary btn-sm">8</button>
           </div>
         </div>
       </div>
@@ -105,12 +105,27 @@
   <!-- Start Footer Section -->
   <div id="footer"></div>
   <!-- End Footer Section -->
+
+  <!-- about -->
+
+  <!-- end about -->
+
+  <script src="pageLoader.js"></script>
+  <script>
+    // Load the sections using the pageLoader.js
+    loadSection("spinner", "components/spinner.html");
+    loadSection("header", "components/header.html");
+    loadSection("newslettre", "components/newslettre.html");
+    loadSection("footer", "components/footer.html");
+  </script>
   <!-- Option 1: Bootstrap Bundle with Popper -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
   <script src="scripts.js"></script>
+
+  <script src="script-destinations.js"></script>
 </body>
 
 </html>

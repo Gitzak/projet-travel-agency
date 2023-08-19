@@ -1,298 +1,217 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
-      integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
-    />
 
-    <!-- cdn font-awesome -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
-      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+    integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,700&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="style.css" />
-    <title>Contact Us</title>
-    <style>
-      /* .body{
+  <!-- cdn font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <link rel="stylesheet" href="style.css" />
+  <title>Contact Us</title>
+  <style>
+    /* .body{
             text-align: center;
         } */
-      @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap");
 
-      * {
-        margin: 0;
-        padding: 0;
-        scroll-behavior: smooth;
-        box-sizing: border-box;
-      }
+    * {
+      margin: 0;
+      padding: 0;
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
 
-      body {
-        background-color: #f8f8f8;
-      }
+    body {
+      background-color: #f8f8f8;
+    }
 
-      ul {
-        list-style: none;
-      }
+    ul {
+      list-style: none;
+    }
 
-      input {
-        overflow: hidden;
-      }
+    input {
+      overflow: hidden;
+    }
 
-      .contact-sec .contact-ul li,
-      .contact-ul b {
-        margin: 10px 0;
-        font-family: "Ubuntu";
-      }
+    .contact-sec .contact-ul li,
+    .contact-ul b {
+      margin: 10px 0;
+      font-family: "Ubuntu";
+    }
 
-      .inptFld {
-        width: 100%;
-        height: 53px;
-        border: 0;
-        margin: 0 0 10px;
-        border-radius: 8px;
-        padding: 0 20px;
-        font-size: 16px;
-        color: #000;
-      }
+    .inptFld {
+      width: 100%;
+      height: 53px;
+      border: 0;
+      margin: 0 0 10px;
+      border-radius: 8px;
+      padding: 0 20px;
+      font-size: 16px;
+      color: #000;
+    }
 
-      /* Responcive css Start */
+    /* Responcive css Start */
 
-      .contact-sec .contact-ul li,
-      .contact-ul b {
-        font-size: 18px;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- Start spinner -->
-    <div
-      id="spinner"
-      class="spinner-wrapper justify-content-center align-items-center"
-    ></div>
-    <!-- End spinner -->
+    .contact-sec .contact-ul li,
+    .contact-ul b {
+      font-size: 18px;
+    }
+  </style>
+</head>
 
-    <!-- Start Header -->
-    <header id="header"></header>
-    <!-- End header -->
-    <!-- Start section Heading -->
-    <section class="heading heading-contact d-flex">
-      <div class="container">
-          <div class="row justify-content-center mt-5">
-              <div class="col-md-10 col-sm-12 text-center">
-                  <h1 class="text-light">Contact Us</h1>
-              </div>
-          </div>
+<body>
+  <!-- Start spinner -->
+  <div id="spinner" class="spinner-wrapper justify-content-center align-items-center"></div>
+  <!-- End spinner -->
+
+  <!-- Start Header -->
+  <header id="header"></header>
+  <!-- End header -->
+  <!-- Start section Heading -->
+  <section class="heading heading-contact d-flex">
+    <div class="container">
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-10 col-sm-12 text-center">
+          <h1 class="text-light">Contact Us</h1>
+        </div>
       </div>
+    </div>
   </section>
   <!-- End heading Section -->
 
 
-    <div class="container">
-      <div class="row my-40">
-        <div class="col-12 text-center">
-          <h1 style="color: #363636">Discover the allure of Morocco</h1>
-          <p style="color: #767681; margin-bottom: 0; margin-top: 20px">
-            Exploring a World of Insights: Discover Engaging Blog Posts and
-            Articles that Inform,<br />
-            Inspire, and Enrich Your Knowledge
-          </p>
-        </div>
+  <div class="container">
+    <div class="row my-40">
+      <div class="col-12 text-center">
+        <h1 style="color: #363636">Discover the allure of Morocco</h1>
+        <p style="color: #767681; margin-bottom: 0; margin-top: 20px">
+          Exploring a World of Insights: Discover Engaging Blog Posts and
+          Articles that Inform,<br />
+          Inspire, and Enrich Your Knowledge
+        </p>
       </div>
-
-      <div class="row">
-        <div class="col-12">
-          <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13227.678455530127!2d-6.848041679931902!3d34.02027429909469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8f44375f51%3A0xb2ca6a567f1d8dc4!2sQuartier%20Hassan%2C%20Rabat!5e0!3m2!1sfr!2sma!4v1691435835943!5m2!1sfr!2sma"
-            width="100%"
-            height="450"
-            frameborder="0"
-            style="border: 0"
-            allowfullscreen
-          ></iframe>
-        </div>
-      </div>
-      <section class="contact-sec sec-pad my-40">
-        <div class="row">
-          <div class="col-md-6 col-sm-12">
-            <div class="contact-detail">
-              <div class="contact-detail-1">
-                <h2 class="text-primary">Contact informations</h2>
-                <h5 style="margin: 0 0 15px; color: #767681">
-                  We're very approachable and would love to speak to you
-                </h5>
-              </div>
-              <ul class="list-group">
-                <li class="list-group-item bg-transparent border-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="none"
-                    class="me-3"
-                  >
-                    <path
-                      d="M18.4582 13.4261L14.3018 11.6448C14.1243 11.5691 13.9269 11.5532 13.7395 11.5994C13.5521 11.6455 13.3848 11.7513 13.2628 11.9009L11.4221 14.1497C8.53335 12.7877 6.20858 10.4629 4.84657 7.57419L7.09544 5.73353C7.24524 5.61169 7.35127 5.44436 7.39747 5.25687C7.44368 5.06939 7.42754 4.87195 7.3515 4.69445L5.57021 0.53813C5.48676 0.346794 5.33916 0.190574 5.15286 0.0964089C4.96656 0.00224336 4.75324 -0.0239658 4.54969 0.0223006L0.690246 0.912941C0.493997 0.958259 0.318903 1.06876 0.193542 1.2264C0.0681805 1.38405 -4.52078e-05 1.57953 2.24746e-08 1.78094C2.24746e-08 11.2997 7.71517 19 17.219 19C17.4205 19.0001 17.6161 18.9319 17.7738 18.8066C17.9315 18.6812 18.0421 18.5061 18.0874 18.3098L18.9781 14.4503C19.024 14.2458 18.9973 14.0316 18.9024 13.8447C18.8075 13.6577 18.6504 13.5097 18.4582 13.4261Z"
-                      fill="black"
-                    />
-                  </svg>
-                  00 (212) 524 390 367
-                </li>
-                <li class="list-group-item bg-transparent border-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="none"
-                    class="me-3"
-                  >
-                    <path
-                      d="M18.4582 13.4261L14.3018 11.6448C14.1243 11.5691 13.9269 11.5532 13.7395 11.5994C13.5521 11.6455 13.3848 11.7513 13.2628 11.9009L11.4221 14.1497C8.53335 12.7877 6.20858 10.4629 4.84657 7.57419L7.09544 5.73353C7.24524 5.61169 7.35127 5.44436 7.39747 5.25687C7.44368 5.06939 7.42754 4.87195 7.3515 4.69445L5.57021 0.53813C5.48676 0.346794 5.33916 0.190574 5.15286 0.0964089C4.96656 0.00224336 4.75324 -0.0239658 4.54969 0.0223006L0.690246 0.912941C0.493997 0.958259 0.318903 1.06876 0.193542 1.2264C0.0681805 1.38405 -4.52078e-05 1.57953 2.24746e-08 1.78094C2.24746e-08 11.2997 7.71517 19 17.219 19C17.4205 19.0001 17.6161 18.9319 17.7738 18.8066C17.9315 18.6812 18.0421 18.5061 18.0874 18.3098L18.9781 14.4503C19.024 14.2458 18.9973 14.0316 18.9024 13.8447C18.8075 13.6577 18.6504 13.5097 18.4582 13.4261Z"
-                      fill="black"
-                    />
-                  </svg>
-                  00 (212) 661 434 691
-                </li>
-                <li class="list-group-item bg-transparent border-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="19"
-                    viewBox="0 0 19 19"
-                    fill="none"
-                    class="me-3"
-                  >
-                    <path
-                      d="M9.5 0C4.24976 0 0 4.24891 0 9.5C0 14.7502 4.24891 19 9.5 19C11.3446 19 13.1522 18.4583 14.687 17.4592C15.1469 17.1598 15.2472 16.5288 14.8997 16.1042L14.5098 15.628C14.216 15.269 13.6985 15.181 13.308 15.4315C12.1784 16.156 10.8528 16.5484 9.5 16.5484C5.6135 16.5484 2.45161 13.3865 2.45161 9.5C2.45161 5.6135 5.6135 2.45161 9.5 2.45161C13.336 2.45161 16.5484 4.65879 16.5484 8.58065C16.5484 10.0664 15.7404 11.6353 14.3201 11.7866C13.6555 11.7692 13.6723 11.2941 13.8039 10.6365L14.7015 5.99722C14.8113 5.42994 14.3767 4.90323 13.7989 4.90323H12.0759C11.9487 4.90322 11.8259 4.95006 11.731 5.03479C11.6361 5.11952 11.5757 5.23622 11.5613 5.36264L11.561 5.36616C10.998 4.68044 10.0115 4.53204 9.26369 4.53204C6.40679 4.53204 3.98387 6.916 3.98387 10.3339C3.98387 12.8355 5.39297 14.3894 7.66129 14.3894C8.69495 14.3894 9.85889 13.7904 10.5339 12.921C10.8987 14.2274 12.0897 14.2274 13.2426 14.2274C17.4145 14.2274 19 11.4842 19 8.58065C19 3.35768 14.7872 0 9.5 0ZM8.66952 11.6616C7.81724 11.6616 7.2878 11.0632 7.2878 10.0998C7.2878 8.37632 8.46684 7.31385 9.53371 7.31385C10.3876 7.31385 10.8975 7.89768 10.8975 8.8756C10.8975 10.6017 9.59983 11.6616 8.66952 11.6616Z"
-                      fill="black"
-                    />
-                  </svg>
-                  contact@moroccotravel.com
-                </li>
-                <li class="list-group-item bg-transparent border-0">
-                  <svg
-                    xmlns="http://www.w3.org/2000/svg"
-                    width="19"
-                    height="25"
-                    viewBox="0 0 19 25"
-                    fill="none"
-                    class="me-3"
-                  >
-                    <path
-                      d="M8.52368 24.4956C1.33445 14.2105 0 13.1549 0 9.375C0 4.19731 4.25328 0 9.5 0C14.7467 0 19 4.19731 19 9.375C19 13.1549 17.6655 14.2105 10.4763 24.4956C10.0045 25.1682 8.99541 25.1681 8.52368 24.4956ZM9.5 13.2812C11.6861 13.2812 13.4583 11.5324 13.4583 9.375C13.4583 7.21763 11.6861 5.46875 9.5 5.46875C7.31386 5.46875 5.54167 7.21763 5.54167 9.375C5.54167 11.5324 7.31386 13.2812 9.5 13.2812Z"
-                      fill="black"
-                    />
-                  </svg>
-                  Rue Lgza N°148, 40000, Marrakech Morocco.
-                </li>
-              </ul>
-            </div>
-          </div>
-
-          <div class="col-md-6 col-sm-12">
-            <div class="row">
-              <div class="contact-detail">
-                <div class="contact-detail-2">
-                  <h2 class="text-primary">Send us a message</h2>
-                  <h5 style="margin: 0 0 15px; color: #767681">
-                    Contact us. You need help ?
-                  </h5>
-                </div>
-                <div class="form">
-                  <div class="form-full-name">
-                    <input
-                      type="text"
-                      name="name"
-                      placeholder="Full Name"
-                      class="inptFld"
-                      required
-                    />
-                  </div>
-                  <div class="form-Email">
-                    <input
-                      type="email"
-                      name="email"
-                      placeholder="Email Address"
-                      class="inptFld"
-                      required
-                    />
-                  </div>
-                  <div class="form-message">
-                    <input
-                      type="form-message"
-                      placeholder="Messages"
-                      class="inptFld"
-                      required
-                    />
-                  </div>
-                  <div class="form-button">
-                    <button
-                      type="button"
-                      class="btn btn-primary border-radius-8"
-                      style="width: 100%; height: 52px"
-                    >
-                      Send
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
     </div>
 
-    <!-- Start Newslettre Section -->
-    <div id="newslettre"></div>
-    <!-- End Newslettre Section -->
+    <div class="row">
+      <div class="col-12">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13227.678455530127!2d-6.848041679931902!3d34.02027429909469!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xda76b8f44375f51%3A0xb2ca6a567f1d8dc4!2sQuartier%20Hassan%2C%20Rabat!5e0!3m2!1sfr!2sma!4v1691435835943!5m2!1sfr!2sma"
+          width="100%" height="450" frameborder="0" style="border: 0" allowfullscreen></iframe>
+      </div>
+    </div>
+    <section class="contact-sec sec-pad my-40">
+      <div class="row">
+        <div class="col-md-6 col-sm-12">
+          <div class="contact-detail">
+            <div class="contact-detail-1">
+              <h2 class="text-primary">Contact informations</h2>
+              <h5 style="margin: 0 0 15px; color: #767681">
+                We're very approachable and would love to speak to you
+              </h5>
+            </div>
+            <ul class="list-group">
+              <li class="list-group-item bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  class="me-3">
+                  <path
+                    d="M18.4582 13.4261L14.3018 11.6448C14.1243 11.5691 13.9269 11.5532 13.7395 11.5994C13.5521 11.6455 13.3848 11.7513 13.2628 11.9009L11.4221 14.1497C8.53335 12.7877 6.20858 10.4629 4.84657 7.57419L7.09544 5.73353C7.24524 5.61169 7.35127 5.44436 7.39747 5.25687C7.44368 5.06939 7.42754 4.87195 7.3515 4.69445L5.57021 0.53813C5.48676 0.346794 5.33916 0.190574 5.15286 0.0964089C4.96656 0.00224336 4.75324 -0.0239658 4.54969 0.0223006L0.690246 0.912941C0.493997 0.958259 0.318903 1.06876 0.193542 1.2264C0.0681805 1.38405 -4.52078e-05 1.57953 2.24746e-08 1.78094C2.24746e-08 11.2997 7.71517 19 17.219 19C17.4205 19.0001 17.6161 18.9319 17.7738 18.8066C17.9315 18.6812 18.0421 18.5061 18.0874 18.3098L18.9781 14.4503C19.024 14.2458 18.9973 14.0316 18.9024 13.8447C18.8075 13.6577 18.6504 13.5097 18.4582 13.4261Z"
+                    fill="black" />
+                </svg>
+                00 (212) 524 390 367
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  class="me-3">
+                  <path
+                    d="M18.4582 13.4261L14.3018 11.6448C14.1243 11.5691 13.9269 11.5532 13.7395 11.5994C13.5521 11.6455 13.3848 11.7513 13.2628 11.9009L11.4221 14.1497C8.53335 12.7877 6.20858 10.4629 4.84657 7.57419L7.09544 5.73353C7.24524 5.61169 7.35127 5.44436 7.39747 5.25687C7.44368 5.06939 7.42754 4.87195 7.3515 4.69445L5.57021 0.53813C5.48676 0.346794 5.33916 0.190574 5.15286 0.0964089C4.96656 0.00224336 4.75324 -0.0239658 4.54969 0.0223006L0.690246 0.912941C0.493997 0.958259 0.318903 1.06876 0.193542 1.2264C0.0681805 1.38405 -4.52078e-05 1.57953 2.24746e-08 1.78094C2.24746e-08 11.2997 7.71517 19 17.219 19C17.4205 19.0001 17.6161 18.9319 17.7738 18.8066C17.9315 18.6812 18.0421 18.5061 18.0874 18.3098L18.9781 14.4503C19.024 14.2458 18.9973 14.0316 18.9024 13.8447C18.8075 13.6577 18.6504 13.5097 18.4582 13.4261Z"
+                    fill="black" />
+                </svg>
+                00 (212) 661 434 691
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="19" viewBox="0 0 19 19" fill="none"
+                  class="me-3">
+                  <path
+                    d="M9.5 0C4.24976 0 0 4.24891 0 9.5C0 14.7502 4.24891 19 9.5 19C11.3446 19 13.1522 18.4583 14.687 17.4592C15.1469 17.1598 15.2472 16.5288 14.8997 16.1042L14.5098 15.628C14.216 15.269 13.6985 15.181 13.308 15.4315C12.1784 16.156 10.8528 16.5484 9.5 16.5484C5.6135 16.5484 2.45161 13.3865 2.45161 9.5C2.45161 5.6135 5.6135 2.45161 9.5 2.45161C13.336 2.45161 16.5484 4.65879 16.5484 8.58065C16.5484 10.0664 15.7404 11.6353 14.3201 11.7866C13.6555 11.7692 13.6723 11.2941 13.8039 10.6365L14.7015 5.99722C14.8113 5.42994 14.3767 4.90323 13.7989 4.90323H12.0759C11.9487 4.90322 11.8259 4.95006 11.731 5.03479C11.6361 5.11952 11.5757 5.23622 11.5613 5.36264L11.561 5.36616C10.998 4.68044 10.0115 4.53204 9.26369 4.53204C6.40679 4.53204 3.98387 6.916 3.98387 10.3339C3.98387 12.8355 5.39297 14.3894 7.66129 14.3894C8.69495 14.3894 9.85889 13.7904 10.5339 12.921C10.8987 14.2274 12.0897 14.2274 13.2426 14.2274C17.4145 14.2274 19 11.4842 19 8.58065C19 3.35768 14.7872 0 9.5 0ZM8.66952 11.6616C7.81724 11.6616 7.2878 11.0632 7.2878 10.0998C7.2878 8.37632 8.46684 7.31385 9.53371 7.31385C10.3876 7.31385 10.8975 7.89768 10.8975 8.8756C10.8975 10.6017 9.59983 11.6616 8.66952 11.6616Z"
+                    fill="black" />
+                </svg>
+                contact@moroccotravel.com
+              </li>
+              <li class="list-group-item bg-transparent border-0">
+                <svg xmlns="http://www.w3.org/2000/svg" width="19" height="25" viewBox="0 0 19 25" fill="none"
+                  class="me-3">
+                  <path
+                    d="M8.52368 24.4956C1.33445 14.2105 0 13.1549 0 9.375C0 4.19731 4.25328 0 9.5 0C14.7467 0 19 4.19731 19 9.375C19 13.1549 17.6655 14.2105 10.4763 24.4956C10.0045 25.1682 8.99541 25.1681 8.52368 24.4956ZM9.5 13.2812C11.6861 13.2812 13.4583 11.5324 13.4583 9.375C13.4583 7.21763 11.6861 5.46875 9.5 5.46875C7.31386 5.46875 5.54167 7.21763 5.54167 9.375C5.54167 11.5324 7.31386 13.2812 9.5 13.2812Z"
+                    fill="black" />
+                </svg>
+                Rue Lgza N°148, 40000, Marrakech Morocco.
+              </li>
+            </ul>
+          </div>
+        </div>
 
-    <!-- Start Footer Section -->
-    <div id="footer"></div>
-    <!-- End Footer Section -->
+        <div class="col-md-6 col-sm-12">
+          <div class="row">
+            <div class="contact-detail">
+              <div class="contact-detail-2">
+                <h2 class="text-primary">Send us a message</h2>
+                <h5 style="margin: 0 0 15px; color: #767681">
+                  Contact us. You need help ?
+                </h5>
+              </div>
+              <div class="form">
+                <div class="form-full-name">
+                  <input type="text" name="name" placeholder="Full Name" class="inptFld" required />
+                </div>
+                <div class="form-Email">
+                  <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
+                </div>
+                <div class="form-message">
+                  <input type="form-message" placeholder="Messages" class="inptFld" required />
+                </div>
+                <div class="form-button">
+                  <button type="button" class="btn btn-primary border-radius-8" style="width: 100%; height: 52px">
+                    Send
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
 
-    <script src="pageLoader.js"></script>
-    <script>
-      // Load the sections using the pageLoader.js
-      loadSection("spinner", "components/spinner.html");
-      loadSection("header", "components/header.html");
-      loadSection("newslettre", "components/newslettre.html");
-      loadSection("footer", "components/footer.html");
-      // loadSection('footer', 'footer.html');
-    </script>
-    <!-- Option 1: Bootstrap Bundle with Popper -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
-      crossorigin="anonymous"
-    ></script>
+  <!-- Start Newslettre Section -->
+  <div id="newslettre"></div>
+  <!-- End Newslettre Section -->
 
-    <script src="scripts.js"></script>
+  <!-- Start Footer Section -->
+  <div id="footer"></div>
+  <!-- End Footer Section -->
 
-  </body>
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <script src="scripts.js"></script>
+
+</body>
+
 </html>
