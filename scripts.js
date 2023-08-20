@@ -268,7 +268,6 @@ async function bookingForm() {
             console.log('Email sent:', response);
             successMessage.classList.remove("d-none");
             spinner.classList.add("d-none");
-            form_booking.submit();
           }, function (error) {
             console.error('Email sending failed:', error);
             errorMessage.classList.remove("d-none");
@@ -278,7 +277,51 @@ async function bookingForm() {
     });
     // console.log("6-6 : form_booking");
   } catch (error) {
-    console.error("Error fetching destinations data:", error);
+    console.error("Error ", error);
+  }
+}
+
+async function contactForm() {
+  try {
+    const form_contact = document.getElementById("contactForm");
+    form_contact.addEventListener("submit", async function (event) {
+      event.preventDefault();
+
+      let full_name = document.getElementById("full-name").value.trim();
+      let email_address = document.getElementById("email-address").value.trim();
+      let message = document.getElementById("message").value.trim();
+
+      var successMessage = document.getElementById("successMessage");
+      var errorMessage = document.getElementById("errorMessage");
+      var spinner = document.getElementById("spinner");
+
+      successMessage.classList.add("d-none");
+      errorMessage.classList.add("d-none");
+      spinner.classList.remove("d-none");
+
+      if (full_name === "" || email_address === "" || message === "") {
+        alert("Please provide all required information");
+      } else {
+        let template_params = {
+          from_email: email_address,
+          from_name: full_name,
+          message: message
+        };
+
+        try {
+          await emailjs.send('service_575l31r', 'template_xfdh8us', template_params);
+          console.log('Email sent');
+          successMessage.classList.remove("d-none");
+        } catch (error) {
+          console.error('Email sending failed:', error);
+          errorMessage.classList.remove("d-none");
+        } finally {
+          spinner.classList.add("d-none");
+        }
+      }
+    });
+  } catch (error) {
+    console.error("Error ", error);
   }
 }
 
@@ -494,7 +537,7 @@ async function renderMap() {
     }
     // console.log("4 : map");
   } catch (error) {
-    console.error("Error fetching destinations data:", error);
+    console.error("Error ", error);
   }
 }
 
@@ -508,7 +551,7 @@ async function hideSpinner() {
     }, 1000);
     // console.log("5 : hide spinner");
   } catch (error) {
-    console.error("Error fetching destinations data:", error);
+    console.error("Error:", error);
   }
 }
 
@@ -543,7 +586,7 @@ async function formSearch() {
     });
     // console.log("6 : formSearch");
   } catch (error) {
-    console.error("Error fetching destinations data:", error);
+    console.error("Error ", error);
   }
 }
 
@@ -576,6 +619,10 @@ async function initPage() {
 
     if (window.location.href.includes("blogs")) {
       await fetchAndRenderBlogs();
+    }
+
+    if (window.location.href.includes("contact")) {
+      await contactForm();
     }
 
     await hideSpinner();

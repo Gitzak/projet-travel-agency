@@ -22,6 +22,12 @@
     crossorigin="anonymous" referrerpolicy="no-referrer" />
 
   <link rel="stylesheet" href="style.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init('xOvhIeZ8KAP-sfhSU');
+    })();
+  </script>
   <title>Contact Us</title>
   <style>
     input {
@@ -153,18 +159,34 @@
                   Contact us. You need help ?
                 </h5>
               </div>
-              <form class="form">
-                <div class="form-full-name">
-                  <input type="text" name="name" placeholder="Full Name" class="inptFld" required />
+              <form id="contactForm" class="form">
+                <div class="col-sm-12 p-1">
+                  <input id="full-name" name="full-name" type="text" class="form-control py-3" placeholder="Full Name"
+                    required />
                 </div>
-                <div class="form-Email">
-                  <input type="email" name="email" placeholder="Email Address" class="inptFld" required />
+                <div class="col-sm-12 p-1">
+                  <input id="email-address" name="email-address" type="email" class="form-control py-3"
+                    placeholder="Email Address" required />
                 </div>
-                <div class="form-message">
-                  <input type="form-message" placeholder="Messages" class="inptFld" required />
+                <div class="col-sm-12 p-1">
+                  <textarea class="form-control py-3" id="message" name="message" cols="30" rows="4"
+                    placeholder="Message" required></textarea>
+                </div>
+                <div class="alert alert-success d-none" id="successMessage" role="alert">
+                  Email sent successfully.
+                </div>
+
+                <div class="alert alert-danger d-none" id="errorMessage" role="alert">
+                  Email sending failed.
+                </div>
+
+                <div class="d-none text-center" id="spinner">
+                  <div class="spinner-border text-primary" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                  </div>
                 </div>
                 <div class="form-button">
-                  <button type="button" class="btn btn-primary border-radius-8" style="width: 100%; height: 52px">
+                  <button type="submit" class="btn btn-primary border-radius-8 w-100 mt-2">
                     Send
                   </button>
                 </div>
