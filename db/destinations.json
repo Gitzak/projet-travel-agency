@@ -5,12 +5,12 @@
         "location": "Chefchaouen",
         "price": 1299.00,
         "description": "Explore Chefchaouen's blue charm, markets, and stunning vistas.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/chefchaouen.jpg",
+        "primaryImage": "./assets/images/destinations/chefchaouen.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/chefchaouen_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/chefchaouen_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/chefchaouen_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/chefchaouen_4.jpg"
+            "./assets/images/destinations/chefchaouen_1.jpg",
+            "./assets/images/destinations/chefchaouen_2.jpg",
+            "./assets/images/destinations/chefchaouen_3.jpg",
+            "./assets/images/destinations/chefchaouen_4.jpg"
         ]
     },
     {
@@ -19,12 +19,12 @@
         "location": "Agafay Valley",
         "price": 3599.00,
         "description": "Embark on a 2-day Agafay Valley tour, immerse in desert beauty, embrace Berber culture, find tranquil serenity.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/agafay.jpg",
+        "primaryImage": "./assets/images/destinations/agafay.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/agafay_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/agafay_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/agafay_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/agafay_4.jpg"
+            "./assets/images/destinations/agafay_1.jpg",
+            "./assets/images/destinations/agafay_2.jpg",
+            "./assets/images/destinations/agafay_3.jpg",
+            "./assets/images/destinations/agafay_4.jpg"
         ]
     },
     {
@@ -33,12 +33,12 @@
         "location": "Marrakech",
         "price": 4999.00,
         "description": "Experience the magic of Marrakech on a captivating 2-day tour. Delight in vibrant markets, historic landmarks, and cultural richness.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/kech.jpg",
+        "primaryImage": "./assets/images/destinations/kech.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/kech_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/kech_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/kech_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/kech_4.jpg"
+            "./assets/images/destinations/kech_1.jpg",
+            "./assets/images/destinations/kech_2.jpg",
+            "./assets/images/destinations/kech_3.jpg",
+            "./assets/images/destinations/kech_4.jpg"
         ]
     },
     {
@@ -47,12 +47,12 @@
         "location": "Rabat",
         "price": 4500.00,
         "description": "Discover Rabat's captivating blend of history, culture, and modern charm on a mesmerizing 4-day journey at the crossroads of tradition and innovation.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/rabat.jpg",
+        "primaryImage": "./assets/images/destinations/rabat.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/rabat_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/rabat_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/rabat_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/rabat_4.jpg"
+            "./assets/images/destinations/rabat_1.jpg",
+            "./assets/images/destinations/rabat_2.jpg",
+            "./assets/images/destinations/rabat_3.jpg",
+            "./assets/images/destinations/rabat_4.jpg"
         ]
     },
     {
@@ -61,12 +61,12 @@
         "location": "Agadir",
         "price": 4999.00,
         "description": "Embark on a captivating 3-day voyage to Agadir, where sun-kissed beaches, vibrant markets, and coastal charm converge to create an unforgettable escape.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/agadir.jpg",
+        "primaryImage": "./assets/images/destinations/agadir.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/agadir_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/agadir_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/agadir_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/agadir_4.jpg"
+            "./assets/images/destinations/agadir_1.jpg",
+            "./assets/images/destinations/agadir_2.jpg",
+            "./assets/images/destinations/agadir_3.jpg",
+            "./assets/images/destinations/agadir_4.jpg"
         ]
     },
     {
@@ -75,12 +75,12 @@
         "location": "Tangier",
         "price": 2999.00,
         "description": "Embark on a 2-day odyssey in Tangier, where history, culture, and coastal charm blend seamlessly for an enchanting escape.",
-        "primaryImage": "/projet-travel-agency/assets/images/destinations/tangier.jpg",
+        "primaryImage": "./assets/images/destinations/tangier.jpg",
         "secondaryImages": [
-            "/projet-travel-agency/assets/images/destinations/tangier_1.jpg",
-            "/projet-travel-agency/assets/images/destinations/tangier_2.jpg",
-            "/projet-travel-agency/assets/images/destinations/tangier_3.jpg",
-            "/projet-travel-agency/assets/images/destinations/tangier_4.jpg"
+            "./assets/images/destinations/tangier_1.jpg",
+            "./assets/images/destinations/tangier_2.jpg",
+            "./assets/images/destinations/tangier_3.jpg",
+            "./assets/images/destinations/tangier_4.jpg"
         ]
     }
 ]

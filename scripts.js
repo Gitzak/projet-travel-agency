@@ -66,7 +66,7 @@ async function fetchAndRenderDestinations() {
                         </div>
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex mb-3">
-                                <img src="/assets/svg/map.svg" alt="">
+                                <img src="./assets/svg/map.svg" alt="">
                                 <h6 class="mb-0 ms-2">${tour.location}</h6>
                             </div>
                             <h5 class="card-title">${tour.title}</h5>
@@ -163,7 +163,7 @@ async function fetchAndRenderDestinationsSearchResult() {
                         </div>
                         <div class="card-body d-flex flex-column">
                             <div class="d-flex mb-3">
-                                <img src="/assets/svg/map.svg" alt="">
+                                <img src="./assets/svg/map.svg" alt="">
                                 <h6 class="mb-0 ms-2">${tour.location}</h6>
                             </div>
                             <h5 class="card-title">${tour.title}</h5>
