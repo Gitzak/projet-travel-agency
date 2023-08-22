@@ -489,11 +489,11 @@ async function renderMap() {
     pointIndex = leafletKnn(pointsLayer); // Create a k-nearest neighbors index for points
 
     // Set the initial view of the map to a specific location and zoom level
-    map.setView([34.0198661, -6.8255744], 12);
+    map.setView([34.0198661, -6.8815661], 18);
 
     // Add a tile layer from OpenStreetMap to the map
     L.tileLayer("https://tile.openstreetmap.org/{z}/{x}/{y}.png", {
-      maxZoom: 18,
+      maxZoom: 12,
       attribution: "",
     }).addTo(map);
 
